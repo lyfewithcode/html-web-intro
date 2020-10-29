@@ -20,39 +20,43 @@
         
         <!-- Membuat form -->
         <form>
-            <label for="nama">Nama Lengkap</label>
-            <input type="text" placeholder="Nama Lengkap" id="nama">
-            <br>
-            <label for="pesan">Pesan Anda</label>
-            <textarea cols="30" rows="10" placeholder="Pesan.." id="pesan"></textarea>
+            <fieldset>
+                <legend>Form Utama</legend>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" placeholder="Nama Lengkap" id="nama">
+                <br>
+                <label for="pesan">Pesan Anda</label>
+                <textarea cols="30" rows="10" placeholder="Pesan.." id="pesan"></textarea>
+            </fieldset>
 
-            <br>
+            <fieldset>
+                <legend>Info Tambahan</legend>
+                <label>Bahasa Pemrograman Yang di Kuasai</label><br>
+                <input type="checkbox" name="bhs_pemrograman" value="HTML" checked> HTML 
+                <input type="checkbox" name="bhs_pemrograman" value="CSS"> CSS
+                <input type="checkbox" name="bhs_pemrograman" value="JS"> JS
+                <input type="checkbox" name="bhs_pemrograman" value="PHP"> PHP
 
-            <label>Bahasa Pemrograman Yang di Kuasai</label><br>
-            <input type="checkbox" name="bhs_pemrograman" value="HTML" checked> HTML 
-            <input type="checkbox" name="bhs_pemrograman" value="CSS"> CSS
-            <input type="checkbox" name="bhs_pemrograman" value="JS"> JS
-            <input type="checkbox" name="bhs_pemrograman" value="PHP"> PHP
+                <label>Jenis Kelamin</label><br>
+                <input type="radio" name="gender" value="L" checked> Laki-laki
+                <input type="radio" name="gender" value="P"> Perempuan
 
-            <br>
+                <br>
 
-            <label>Jenis Kelamin</label><br>
-            <input type="radio" name="gender" value="L" checked> Laki-laki
-            <input type="radio" name="gender" value="P"> Perempuan
+                <label>Domisili</label>
+                <select name="kota_domisili">
+                    <optgroup label="DKI Jakarta">
+                        <option value="Jaksel">Jakarta Selatan</option>
+                        <option value="Jakbar">Jakarta Barat</option>
+                    </optgroup>
+                    <optgroup label="Jawa Barat">
+                        <option value="Depok">Kota Depok</option>
+                        <option value="Bogor">Kota Bogor</option>
+                    </optgroup>
+                </select>
+            </fieldset>
 
-            <br>
-
-            <label>Domisili</label>
-            <select name="kota_domisili">
-                <optgroup label="DKI Jakarta">
-                    <option value="Jaksel">Jakarta Selatan</option>
-                    <option value="Jakbar">Jakarta Barat</option>
-                </optgroup>
-                <optgroup label="Jawa Barat">
-                    <option value="Depok">Kota Depok</option>
-                    <option value="Bogor">Kota Bogor</option>
-                </optgroup>
-            </select>
+            <input type="submit" value="Kirim Data">
         </form>
 
         <br><br>
